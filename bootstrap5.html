@@ -24,7 +24,7 @@ ScrollsPy-скролл бары-окошки-->
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="text-center text-white">Видео курс по вёрстке для начинающих HTML & CSS</h1>
+                    <h1 class="text-center text-white" id="el">Видео курс по вёрстке для начинающих HTML & CSS</h1>
                     <!-- data-bs-toggle="modal"-тип компонента-модальное окно data-bs-target="#myModal" -ссылка на модальное окно-id должны совпадать -->
                     <div class="itd_play" data-bs-toggle="modal" data-bs-target="#myModal">
                         <div class="itd_triangle"></div>
@@ -514,5 +514,12 @@ col-sm-12 ≥576px для маленьких экранов картинка б�
   </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        function viewEl() {
+            let h1=document.getElementById('el');
+            h1.onclick=function(e){
+            }
+        }
+    </script>
 </body>
 </html>
